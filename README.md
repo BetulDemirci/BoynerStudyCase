@@ -48,4 +48,4 @@
 
 Clone repo:
 ```bash
-git clone https://github.com/username/repo.git
+git clone https://github.com/ozenccelik/BoynerStudyCase.git

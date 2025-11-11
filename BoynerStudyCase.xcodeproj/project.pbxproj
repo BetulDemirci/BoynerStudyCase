@@ -154,7 +154,6 @@
 				38B527662EC0B5D1009B25AB /* BoynerStudyCase */,
 				38B5276C2EC0B5DD009B25AB /* BoynerStudyCaseTests */,
 				38B527702EC0B5DF009B25AB /* BoynerStudyCaseUITests */,
-				38B527402EC0A282009B25AB /* Frameworks */,
 				38B527122EC084B5009B25AB /* Products */,
 				38B527492EC0A5F7009B25AB /* Packages */,
 			);
@@ -168,13 +167,6 @@
 				38B5272C2EC084B9009B25AB /* BoynerStudyCaseUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		38B527402EC0A282009B25AB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		38B527492EC0A5F7009B25AB /* Packages */ = {
