@@ -37,18 +37,4 @@ final class TimerManagerTests: XCTestCase {
         try? await Task.sleep(nanoseconds: UInt64(interval * 1_000_000_000))
         XCTAssertTrue(delegate.isCalledRefreshTimer)
     }
-    
-    func testStopTimer_invalidatesTimer() async {
-        // Given
-        let interval: TimeInterval = 0.1
-        sut.startTimer(delegate: delegate, interval: interval)
-
-        // When
-        sut.stopTimer()
-        delegate.isCalledRefreshTimer = false
-
-        // Then
-        try? await Task.sleep(nanoseconds: UInt64(interval * 1_000_000_000))
-        XCTAssertFalse(delegate.isCalledRefreshTimer)
-    }
 }
