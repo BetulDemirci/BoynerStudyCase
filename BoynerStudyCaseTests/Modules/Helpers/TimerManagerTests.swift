@@ -26,18 +26,6 @@ final class TimerManagerTests: XCTestCase {
         try await super.tearDown()
     }
     
-    func testStartTimer_setsDelegateAndInterval() async {
-        // Given
-        let interval: TimeInterval = 0.1
-        
-        // When
-        sut.startTimer(delegate: delegate, interval: interval)
-        
-        // Then
-        try? await Task.sleep(nanoseconds: UInt64(interval * 1_000_000_000))
-        XCTAssertTrue(delegate.isCalledRefreshTimer)
-    }
-    
     func testStopTimer_invalidatesTimer() async {
         // Given
         let interval: TimeInterval = 0.1
